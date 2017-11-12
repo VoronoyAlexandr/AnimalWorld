@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C76DBB08BF9930F53F8085 /* Pods_AnimalWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218D4330BFE77B3DC3269557 /* Pods_AnimalWorld.framework */; };
+		D9E0F6B31FB85D2500D5B6D0 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6B21FB85D2500D5B6D0 /* AnimalsViewController.swift */; };
+		D9E0F6B91FB8603000D5B6D0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */; };
 		D9F504841FB855AD002F1941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F504831FB855AD002F1941 /* AppDelegate.swift */; };
-		D9F504861FB855AD002F1941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F504851FB855AD002F1941 /* ViewController.swift */; };
 		D9F504891FB855AD002F1941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F504871FB855AD002F1941 /* Main.storyboard */; };
 		D9F5048B1FB855AD002F1941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F5048A1FB855AD002F1941 /* Assets.xcassets */; };
 		D9F5048E1FB855AD002F1941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F5048C1FB855AD002F1941 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D9234B14EEA7BDDACC3FB2E /* Pods-AnimalWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalWorld/Pods-AnimalWorld.release.xcconfig"; sourceTree = "<group>"; };
+		218D4330BFE77B3DC3269557 /* Pods_AnimalWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB570F16CBF4E0CC51C1C218 /* Pods-AnimalWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalWorld/Pods-AnimalWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		D9E0F6B21FB85D2500D5B6D0 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
+		D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D9F504801FB855AD002F1941 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F504831FB855AD002F1941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9F504851FB855AD002F1941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9F504881FB855AD002F1941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9F5048A1FB855AD002F1941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9F5048D1FB855AD002F1941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +35,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C76DBB08BF9930F53F8085 /* Pods_AnimalWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34AA9E4D5B6A10330E8A14CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB570F16CBF4E0CC51C1C218 /* Pods-AnimalWorld.debug.xcconfig */,
+				1D9234B14EEA7BDDACC3FB2E /* Pods-AnimalWorld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		653AB69A499502B11A85AA5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				218D4330BFE77B3DC3269557 /* Pods_AnimalWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E0F6B41FB85F1500D5B6D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9E0F6B51FB85F1C00D5B6D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9E0F6B61FB85F2700D5B6D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9F504871FB855AD002F1941 /* Main.storyboard */,
+				D9E0F6B21FB85D2500D5B6D0 /* AnimalsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D9E0F6B71FB85FDF00D5B6D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9F504831FB855AD002F1941 /* AppDelegate.swift */,
+				D9F5048A1FB855AD002F1941 /* Assets.xcassets */,
+				D9F5048C1FB855AD002F1941 /* LaunchScreen.storyboard */,
+				D9F5048F1FB855AD002F1941 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D9F504771FB855AD002F1941 = {
 			isa = PBXGroup;
 			children = (
 				D9F504821FB855AD002F1941 /* AnimalWorld */,
 				D9F504811FB855AD002F1941 /* Products */,
+				34AA9E4D5B6A10330E8A14CD /* Pods */,
+				653AB69A499502B11A85AA5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +115,10 @@
 		D9F504821FB855AD002F1941 /* AnimalWorld */ = {
 			isa = PBXGroup;
 			children = (
-				D9F504831FB855AD002F1941 /* AppDelegate.swift */,
-				D9F504851FB855AD002F1941 /* ViewController.swift */,
-				D9F504871FB855AD002F1941 /* Main.storyboard */,
-				D9F5048A1FB855AD002F1941 /* Assets.xcassets */,
-				D9F5048C1FB855AD002F1941 /* LaunchScreen.storyboard */,
-				D9F5048F1FB855AD002F1941 /* Info.plist */,
+				D9E0F6B41FB85F1500D5B6D0 /* Model */,
+				D9E0F6B51FB85F1C00D5B6D0 /* Views */,
+				D9E0F6B61FB85F2700D5B6D0 /* Controllers */,
+				D9E0F6B71FB85FDF00D5B6D0 /* Supporting Files */,
 			);
 			path = AnimalWorld;
 			sourceTree = "<group>";
@@ -71,9 +130,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9F504921FB855AD002F1941 /* Build configuration list for PBXNativeTarget "AnimalWorld" */;
 			buildPhases = (
+				DA55D1C201D7854A7ADB2F9E /* [CP] Check Pods Manifest.lock */,
 				D9F5047C1FB855AD002F1941 /* Sources */,
 				D9F5047D1FB855AD002F1941 /* Frameworks */,
 				D9F5047E1FB855AD002F1941 /* Resources */,
+				51E294D95C27E7EFBD3EC2F0 /* [CP] Embed Pods Frameworks */,
+				3FC717EA032974E2B418A8C1 /* [CP] Copy Pods Resources */,
+				D9D620501FB8598300855647 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,13 +194,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FC717EA032974E2B418A8C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalWorld/Pods-AnimalWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E294D95C27E7EFBD3EC2F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimalWorld/Pods-AnimalWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9D620501FB8598300855647 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		DA55D1C201D7854A7ADB2F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9F5047C1FB855AD002F1941 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9F504861FB855AD002F1941 /* ViewController.swift in Sources */,
 				D9F504841FB855AD002F1941 /* AppDelegate.swift in Sources */,
+				D9E0F6B91FB8603000D5B6D0 /* DataManager.swift in Sources */,
+				D9E0F6B31FB85D2500D5B6D0 /* AnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +400,7 @@
 		};
 		D9F504931FB855AD002F1941 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB570F16CBF4E0CC51C1C218 /* Pods-AnimalWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +415,7 @@
 		};
 		D9F504941FB855AD002F1941 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D9234B14EEA7BDDACC3FB2E /* Pods-AnimalWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
