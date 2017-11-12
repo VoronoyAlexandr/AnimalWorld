@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Aa-Yo-9mo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q5M-WW-XxM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,14 +34,67 @@
                     <view key="view" contentMode="scaleToFill" id="aJb-Us-2cO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-D3-hqX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnimalTableCell" rowHeight="200" id="F0I-8k-a2P" customClass="AnimalTableViewCell" customModule="AnimalWorld" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F0I-8k-a2P" id="0na-v5-Ue0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZy-CF-DdV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLp-LQ-Cf3">
+                                                    <rect key="frame" x="16" y="160" width="343" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="FQK-zP-1lC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="PLp-LQ-Cf3" firstAttribute="leading" secondItem="0na-v5-Ue0" secondAttribute="leading" constant="16" id="2VM-rh-NnT"/>
+                                                <constraint firstAttribute="trailing" secondItem="PLp-LQ-Cf3" secondAttribute="trailing" constant="16" id="5L5-qV-TNE"/>
+                                                <constraint firstAttribute="bottom" secondItem="PLp-LQ-Cf3" secondAttribute="bottom" id="5v5-KW-7hg"/>
+                                                <constraint firstItem="tZy-CF-DdV" firstAttribute="leading" secondItem="0na-v5-Ue0" secondAttribute="leading" id="9YM-Aq-a63"/>
+                                                <constraint firstItem="PLp-LQ-Cf3" firstAttribute="top" secondItem="tZy-CF-DdV" secondAttribute="bottom" id="M4D-nK-S6n"/>
+                                                <constraint firstAttribute="trailing" secondItem="tZy-CF-DdV" secondAttribute="trailing" id="SVU-9W-wug"/>
+                                                <constraint firstItem="tZy-CF-DdV" firstAttribute="top" secondItem="0na-v5-Ue0" secondAttribute="top" id="mzr-1e-Izg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ibImageView" destination="tZy-CF-DdV" id="xbi-UW-9eH"/>
+                                            <outlet property="ibTitle" destination="PLp-LQ-Cf3" id="JGK-w3-SRv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="scJ-D3-hqX" firstAttribute="top" secondItem="XpU-bb-sh2" secondAttribute="top" id="5cm-C3-2vn"/>
+                            <constraint firstItem="XpU-bb-sh2" firstAttribute="trailing" secondItem="scJ-D3-hqX" secondAttribute="trailing" id="Snq-7O-Ue4"/>
+                            <constraint firstItem="XpU-bb-sh2" firstAttribute="bottom" secondItem="scJ-D3-hqX" secondAttribute="bottom" id="l9N-o3-tYb"/>
+                            <constraint firstItem="scJ-D3-hqX" firstAttribute="leading" secondItem="XpU-bb-sh2" secondAttribute="leading" id="tzg-Wc-1ok"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XpU-bb-sh2"/>
                     </view>
                     <navigationItem key="navigationItem" id="zzj-9W-40x"/>
+                    <connections>
+                        <outlet property="tableView" destination="scJ-D3-hqX" id="jIZ-Qg-9hY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64L-5G-wOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="134"/>
+            <point key="canvasLocation" x="1213.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Category Animal View Controller-->
         <scene sceneID="hNz-0S-hh8">
@@ -103,6 +156,7 @@
                                             <outlet property="ibSubtitle" destination="WmW-4x-tfj" id="N7d-l4-o8Z"/>
                                             <outlet property="ibTitle" destination="MbI-PD-mPJ" id="aum-CK-U6z"/>
                                             <outlet property="ibimageView" destination="V6e-Yp-ELi" id="9e7-6q-jxB"/>
+                                            <segue destination="ZRy-kA-QyD" kind="show" id="FX2-SK-rn0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

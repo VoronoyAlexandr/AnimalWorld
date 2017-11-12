@@ -13,12 +13,13 @@ class CategoryAnimalTableViewCell: UITableViewCell {
     @IBOutlet private weak var ibimageView: UIImageView!
     @IBOutlet private weak var ibTitle: UILabel!
     @IBOutlet private weak var ibSubtitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        self.selectionStyle = .none
     }
     
-    func update(name:String, image: UIImage, animalsAmount: Int) {
+    func update(name: String, image: UIImage, animalsAmount: Int) {
         ibTitle.text = name
         ibimageView.image = image
         

@@ -13,6 +13,8 @@
 		D9E0F6BB1FB867B900D5B6D0 /* CategoryAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6BA1FB867B900D5B6D0 /* CategoryAnimalViewController.swift */; };
 		D9E0F6BD1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6BC1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift */; };
 		D9E0F6BF1FB87A2400D5B6D0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6BE1FB87A2400D5B6D0 /* Category.swift */; };
+		D9E0F6C11FB8F1D300D5B6D0 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6C01FB8F1D300D5B6D0 /* AnimalTableViewCell.swift */; };
+		D9E0F6C31FB8F86600D5B6D0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6C21FB8F86600D5B6D0 /* Animal.swift */; };
 		D9F504841FB855AD002F1941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F504831FB855AD002F1941 /* AppDelegate.swift */; };
 		D9F504891FB855AD002F1941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F504871FB855AD002F1941 /* Main.storyboard */; };
 		D9F5048B1FB855AD002F1941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F5048A1FB855AD002F1941 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		D9E0F6BA1FB867B900D5B6D0 /* CategoryAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnimalViewController.swift; sourceTree = "<group>"; };
 		D9E0F6BC1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnimalTableViewCell.swift; sourceTree = "<group>"; };
 		D9E0F6BE1FB87A2400D5B6D0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D9E0F6C01FB8F1D300D5B6D0 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		D9E0F6C21FB8F86600D5B6D0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		D9F504801FB855AD002F1941 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F504831FB855AD002F1941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F504881FB855AD002F1941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			children = (
 				D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */,
 				D9E0F6BE1FB87A2400D5B6D0 /* Category.swift */,
+				D9E0F6C21FB8F86600D5B6D0 /* Animal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E0F6BC1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift */,
+				D9E0F6C01FB8F1D300D5B6D0 /* AnimalTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E0F6BB1FB867B900D5B6D0 /* CategoryAnimalViewController.swift in Sources */,
+				D9E0F6C31FB8F86600D5B6D0 /* Animal.swift in Sources */,
+				D9E0F6C11FB8F1D300D5B6D0 /* AnimalTableViewCell.swift in Sources */,
 				D9F504841FB855AD002F1941 /* AppDelegate.swift in Sources */,
 				D9E0F6B91FB8603000D5B6D0 /* DataManager.swift in Sources */,
 				D9E0F6B31FB85D2500D5B6D0 /* AnimalsViewController.swift in Sources */,

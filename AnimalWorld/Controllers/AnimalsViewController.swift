@@ -9,27 +9,44 @@
 import UIKit
 
 class AnimalsViewController: UIViewController {
-
+    
+    @IBOutlet private weak var tableView: UITableView!
+    private var datasource: [Animal] = []
+    var category: Category?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.setupTableView()
+        title = category?.name ?? ""
+        setupDatasource()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Private methods
+    private func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    private func setupDatasource() {
+        guard let category = category else { return }
+        datasource = DataManager.instance.animalStorage[category] ?? []
+        tableView.reloadData()
+    }
+}
+extension AnimalsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return datasource.count
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalTableCell") as? AnimalTableViewCell else {
+            fatalError("Error: Cell doesn't exist")
+        }
+        let animal = datasource[indexPath.row]
+        let animalImage = animal.image ?? #imageLiteral(resourceName: "placeholder")
+        cell.update(name: animal.title, image: animalImage)
+        return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
