@@ -10,6 +10,9 @@
 		24C76DBB08BF9930F53F8085 /* Pods_AnimalWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218D4330BFE77B3DC3269557 /* Pods_AnimalWorld.framework */; };
 		D9E0F6B31FB85D2500D5B6D0 /* AnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6B21FB85D2500D5B6D0 /* AnimalsViewController.swift */; };
 		D9E0F6B91FB8603000D5B6D0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */; };
+		D9E0F6BB1FB867B900D5B6D0 /* CategoryAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6BA1FB867B900D5B6D0 /* CategoryAnimalViewController.swift */; };
+		D9E0F6BD1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6BC1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift */; };
+		D9E0F6BF1FB87A2400D5B6D0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E0F6BE1FB87A2400D5B6D0 /* Category.swift */; };
 		D9F504841FB855AD002F1941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F504831FB855AD002F1941 /* AppDelegate.swift */; };
 		D9F504891FB855AD002F1941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F504871FB855AD002F1941 /* Main.storyboard */; };
 		D9F5048B1FB855AD002F1941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F5048A1FB855AD002F1941 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 		BB570F16CBF4E0CC51C1C218 /* Pods-AnimalWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimalWorld/Pods-AnimalWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		D9E0F6B21FB85D2500D5B6D0 /* AnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewController.swift; sourceTree = "<group>"; };
 		D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D9E0F6BA1FB867B900D5B6D0 /* CategoryAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnimalViewController.swift; sourceTree = "<group>"; };
+		D9E0F6BC1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnimalTableViewCell.swift; sourceTree = "<group>"; };
+		D9E0F6BE1FB87A2400D5B6D0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D9F504801FB855AD002F1941 /* AnimalWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F504831FB855AD002F1941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F504881FB855AD002F1941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E0F6B81FB8603000D5B6D0 /* DataManager.swift */,
+				D9E0F6BE1FB87A2400D5B6D0 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -70,6 +77,7 @@
 		D9E0F6B51FB85F1C00D5B6D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D9E0F6BC1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -78,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D9F504871FB855AD002F1941 /* Main.storyboard */,
+				D9E0F6BA1FB867B900D5B6D0 /* CategoryAnimalViewController.swift */,
 				D9E0F6B21FB85D2500D5B6D0 /* AnimalsViewController.swift */,
 			);
 			path = Controllers;
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E0F6BB1FB867B900D5B6D0 /* CategoryAnimalViewController.swift in Sources */,
 				D9F504841FB855AD002F1941 /* AppDelegate.swift in Sources */,
 				D9E0F6B91FB8603000D5B6D0 /* DataManager.swift in Sources */,
 				D9E0F6B31FB85D2500D5B6D0 /* AnimalsViewController.swift in Sources */,
+				D9E0F6BD1FB86B1200D5B6D0 /* CategoryAnimalTableViewCell.swift in Sources */,
+				D9E0F6BF1FB87A2400D5B6D0 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
